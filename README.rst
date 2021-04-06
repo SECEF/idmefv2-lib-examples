@@ -21,6 +21,7 @@ Installation
 
 The following prerequisites must be installed on your system in order to use
 the examples contained in this repository:
+
 * The ``make`` command (usually available from the system package named ``make``)
 * Python 3.6 or later
 * The Python `idmef <https://github.com/SECEF/idmefv2-lib-model>` package
@@ -42,6 +43,7 @@ command with no arguments:
     make
 
 For each available transport implementation, the command will:
+
 * Start a server for the given transport
 * Wait until the server is fully initialized
 * Spawn a client that sends an IDMEFv2 message using that transport
