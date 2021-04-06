@@ -3,10 +3,11 @@
 # SPDX-License-Identifier: BSD-2-Clause
 #
 TRANSPORTS ?= $(notdir $(abspath $(wildcard */.)))
+PYTHON ?= python3
 
 .PHONY: all
 all: test
 
 .PHONY: test
 test:
-	$(foreach transport,$(TRANSPORTS),./test.py $(transport); )
+	$(foreach transport,$(TRANSPORTS),$(PYTHON) ./test.py $(transport); )
