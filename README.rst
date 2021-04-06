@@ -26,6 +26,10 @@ the examples contained in this repository:
 * The Python `idmef <https://github.com/SECEF/idmefv2-lib-model>` package
 * The Python `idmeftransport <https://github.com/SECEF/idmefv2-lib-transport>`
   package
+* A working (local) Kafka installation (only required if you want to try
+  the Kafka transport implementation). It is expected that the Kafka server
+  is using the default configuration (no ACLs, default network ports, automatic
+  topic creation/configuration, etc.)
 
 Usage
 =====
@@ -42,6 +46,13 @@ For each available transport implementation, the command will:
 * Wait until the server is fully initialized
 * Spawn a client that sends an IDMEFv2 message using that transport
 * Make sure that the IDMEFv2 message was properly received by the server
+
+Alternatively, you can pass the name of a specific transport implementation
+(in lowercase) to only run the example associated with the given transport, e.g.
+
+..  sourcecode:: sh
+
+    make http
 
 Contributions
 =============

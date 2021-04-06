@@ -11,3 +11,7 @@ all: test
 .PHONY: test
 test:
 	$(foreach transport,$(TRANSPORTS),$(PYTHON) ./test.py $(transport); )
+
+.PHONY: $(TRANSPORTS)
+$(TRANSPORTS):
+	$(PYTHON) ./test.py $@
