@@ -5,7 +5,7 @@ import sys
 import tempfile
 
 from args import parse_args
-from idmeftransport import get_transport
+from idmefv2_transport import get_transport
 from os.path import dirname, join
 from queue import Queue, Empty
 

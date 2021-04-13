@@ -1,20 +1,18 @@
-IDMEFv2 examples
-################
+python-idmefv2-examples
+#######################
 
-This repository contains a few examples of IDMEFv2 clients and servers based on the
-`IDMEFv2 modelization library <https://github.com/SECEF/idmefv2-lib-model>` and
-`IDMEFv2 transport library <https://github.com/SECEF/idmefv2-lib-transport>`.
+A few examples of IDMEFv2 clients and servers based on
+`python-idmefv2 <https://github.com/SECEF/python-idmefv2`_ and
+`python-idmefv2-transport <https://github.com/SECEF/python-idmefv2-transport>`_.
 
-It is part of the `SECEF <https://www.secef.net/>` project and serves both as
-an illustration of the libraries' usage and as unit and integration tests
+This repository is part of the `SECEF <https://www.secef.net/>`_ project and serves
+both as an illustration of the libraries' usage and as unit and integration tests
 for the libraries.
 
 You can find more information about the previous version (v1) of the
 Intrusion Detection Message Exchange Format in
-`RFC 4765 <https://tools.ietf.org/html/rfc4765>`.
+`RFC 4765 <https://tools.ietf.org/html/rfc4765>`_.
 
-You can also visit https://www.secef.net/ for more information about
-IDMEFv2's status and development progress.
 
 Installation
 ============
@@ -24,8 +22,8 @@ the examples contained in this repository:
 
 * The ``make`` command (usually available from the system package named ``make``)
 * Python 3.6 or later
-* The Python `idmef <https://github.com/SECEF/idmefv2-lib-model>` package
-* The Python `idmeftransport <https://github.com/SECEF/idmefv2-lib-transport>`
+* The Python `idmefv2 <https://github.com/SECEF/python-idmefv2>`_ package
+* The Python `idmefv2-transport <https://github.com/SECEF/python-idmefv2-transport>`_
   package
 * A working (local) Kafka installation (only required if you want to try
   the Kafka transport implementation). It is expected that the Kafka server
@@ -62,6 +60,7 @@ Contributions
 All contributions must be licensed under the BSD 2-clause license.
 See the LICENSE file inside this repository for more information.
 
-To improve coordination between the various contributors, we kindly ask
-that new contributors subscribe to the `SECEF mailing list
-<https://www.freelists.org/list/secef>` as a way to introduce themselves.
+To improve coordination between the various contributors,
+we kindly ask that new contributors subscribe to the
+`SECEF mailing list <https://www.freelists.org/list/secef>`_
+as a way to introduce themselves.

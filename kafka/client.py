@@ -3,8 +3,8 @@
 
 import uuid
 from datetime import datetime
-from idmef import Message
-from idmeftransport import get_transport
+from idmefv2 import Message
+from idmefv2_transport import get_transport
 from args import parse_args
 
 
