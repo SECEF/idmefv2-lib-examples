@@ -2,7 +2,7 @@
 # Copyright (C) 2021 CS GROUP - France. All Rights Reserved.
 # SPDX-License-Identifier: BSD-2-Clause
 #
-TRANSPORTS ?= $(notdir $(abspath $(wildcard */.)))
+TRANSPORTS ?= $(notdir $(abspath $(wildcard examples/*/.)))
 PYTHON ?= python3
 
 .PHONY: all

@@ -20,7 +20,7 @@ def main(transport):
         sys.executable,
         "-Walways::ResourceWarning",
         "-Walways::RuntimeWarning",
-        "%s/server.py" % transport
+        "examples/%s/server.py" % transport
     ]
 
     print("Testing transport '%s' ..." % transport)

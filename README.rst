@@ -1,7 +1,7 @@
 python-idmefv2-examples
 #######################
 
-A few examples of IDMEFv2 clients and servers based on
+Various examples of IDMEFv2 clients and servers based on
 `python-idmefv2 <https://github.com/SECEF/python-idmefv2`_ and
 `python-idmefv2-transport <https://github.com/SECEF/python-idmefv2-transport>`_.
 
