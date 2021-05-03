@@ -13,25 +13,35 @@ def main(args):
 
     now = datetime.now().isoformat('T')
     msg = Message()
-    msg['Version'] = '0.1'
+    msg['Version'] = '2.0.3'
     msg['ID'] = str(uuid.uuid4())
     msg['CreateTime'] = now
-    msg['DetectTime'] = now
-    msg['CategoryRef'] = 'ENISA'
-    msg['Category'] = []
+    msg['StartTime'] = now
+    msg['Category'] = ['Attempt.Login']
     msg['Description'] = 'Someone tried to login as root from 12.34.56.78 '\
                          'port 1806 using the password method'
-    msg['Severity'] = 'medium'
-    msg['Ref'] = []
-    msg['Agent'] = {
+    msg['Severity'] = 'Medium'
+    msg['Analyzer'] = {
+        'IP': '127.0.0.1',
         'Name': 'prelude-lml',
-        'ID': str(uuid.uuid4()),
+        'Model': 'My Log Analyzer v0.0.1',
         'Category': ['LOG'],
-        'IP4': '127.0.0.1',
-        'IP6': '::1',
+        'Data': ['Log'],
+        'Method': ['Signature'],
     }
-    msg['Source'] = []
-    msg['Target'] = []
+    msg['Source'] = [
+        {
+            'IP': '12.34.56.78',
+            'Port': [1806],
+        }
+    ]
+    msg['Target'] = [
+        {
+            'IP': '23.34.45.56',
+            'Port': [22],
+            'Service': 'sshd',
+        }
+    ]
 
     transport = get_transport('kafka://%s/' % args.address, content_type=args.mime)
     transport.set_parameter('producer_topic', 'idmefv2-example-topic')
