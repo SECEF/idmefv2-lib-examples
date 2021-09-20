@@ -54,6 +54,9 @@ Alternatively, you can pass the name of a specific transport implementation
 
     make http
 
+See the contents of the "examples/" folder for a list of transport names
+supported by the ``make`` command.
+
 Contributions
 =============
 
