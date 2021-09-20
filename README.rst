@@ -2,7 +2,7 @@ python-idmefv2-examples
 #######################
 
 Various examples of IDMEFv2 clients and servers based on
-`python-idmefv2 <https://github.com/SECEF/python-idmefv2`_ and
+`python-idmefv2 <https://github.com/SECEF/python-idmefv2>`_ and
 `python-idmefv2-transport <https://github.com/SECEF/python-idmefv2-transport>`_.
 
 This repository is part of the `SECEF <https://www.secef.net/>`_ project and serves
